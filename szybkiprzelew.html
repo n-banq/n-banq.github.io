@@ -20,10 +20,30 @@ n-Banq - robisz przelew expresowy za 0 zł<br><br>
 Numer konta bankowego: <input type="number"> <br> <br>
 Dane odbiorcy: <input type="text" <br> <br><br>
 Kwota: <input type="number"><br><br>
+
+  <input type="checkbox">
+  <label> PLN </label>
+  <input type="checkbox">
+  <label> EURO </label>
+  <input type="checkbox">
+  <label> DOLAR </label><br><br>
+  
 Tytuł przelewutu: <input type="text" <br> <br> <br>
 
-<a href="menu.html"> <input type="submit"><br> </a> <br> <br> <br>
-<a href="wyloguj.html">Wyloguj się</a>
+<a href="menu.html"> <input type="button" id="confirm" value="Zrealizuj transakcję">
+
+<script type="text/javascript">
+function oknoConfirm() {
+if (confirm('Czy na pewno chcesz wykonać transakcję?')) {
+alert('Twoja transkacja została przekazana do realizacji!');
+} else {
+alert('Twoja transakcja została anulowana');
+}
+}
+document.getElementById('confirm').onclick = function() {
+oknoConfirm()
+}
+</script>
 
 </body>
 </html>

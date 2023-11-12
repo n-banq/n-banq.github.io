@@ -29,7 +29,25 @@ Bez warunków wstępnych możemy Ci udzielić natychmiastowej pożyczki do: <br>
 
 <span style="font-size: xx-large">
 Wpisz kwotę jaką chcesz pożyczyć: <input type="number"><br><br>
-<a href="menu.html"> <input type="submit"><br> </a> <br> <br>
+
+<a href="menu.html"> <input type="button" id="confirm" value="Weź pożyczkę">
+
+<script type="text/javascript">
+function oknoConfirm() {
+if (confirm('Czy na pewno chcesz zrealizować pożyczkę?')) {
+alert('Twoja pożyczka została przekazana do realizacji!');
+} else {
+alert('Twoja pożyczka została anulowana');
+}
+}
+document.getElementById('confirm').onclick = function() {
+oknoConfirm()
+}
+</script>
+
+<br><br>
+
+
 <a href="wyloguj.html">Wyloguj się</a><br><br><br>
 
 <span style="font-size:large">

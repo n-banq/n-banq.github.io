@@ -27,20 +27,22 @@ Pamiętaj aby nigdy nie podawać nikomu swojego loginu oraz hasła! </b><br><br>
 <span style="font-size: xx-large">
 
 <p style="text-align: center">
-Podaj swój login:<br>
+Podaj swój login:<br><br>
 <input type="text" name="Podaj swój login:">
 <br><br>
 
-Podaj swoje hasło: <br>
+Podaj swoje hasło: <br><br>
 <input type="password" name="nazwa">
 <br><br>
 
-Podaj swój unikalny kod PIN: <br>
-<input type="password" name="nazwa">
-</span>
-
+Podaj swój unikalny kod PIN:
+<form action="?" onsubmit="window.location.href = this.password.value + '.html'; return false">
 <p style="text-align: center">
-<a href="menu.html"> <input type="submit"></a>
+	<input type="password" name="password"></p>
+<p style="text-align: center">		
+	<input type="submit"></p>
+</form>
+</span>
 
 </body>
 </html>
